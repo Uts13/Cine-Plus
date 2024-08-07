@@ -13,7 +13,7 @@ export const MovieList = ({apiPath, title}) => {
         <div className="flex justify-start flex-wrap other:justify-evenly"> 
           
           
-          { movies.map((movie) => (
+          {movies && movies.map((movie) => (
             <Card key={movie.id} movie={movie} />
           )) }          
         </div>
